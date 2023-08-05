@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>Вкусняшка</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: calc(100vh - 113px);
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body class="wrapper">
+  <header>
+    <img src="./images/logo.svg" alt="">
+    <div class="address&time">
+      <p class="time">9:00 - 21:00</p>
+      <p class="address">г. Молодечно  <br> ул. В. Гостинец 20</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#pizza">Пиццы</a></li>
+        <li><a href="#burger">Бургеры</a></li>
+        <li><a href="">Закуски</a></li>
+        <li><a href="">Десерты</a></li>
+        <li><a href="">Напитки</a></li>
+        <li><a href="">Комбо</a></li>
+        <li><a href="">Акции</a></li>
+      </ul>
+    </nav>
+    <button class="korzina">
+      <div class="picText">
+        <img src="./images/korzina.svg" alt="">
+        <p>Корзина</p>
+      </div>
+      <span class="orders">0</span>
+    </button>
+    <div class="contacts">
+      <img src="./images/phone.svg" alt="">
+      <div class="phones">
+        <p class="phone1">+375 (29) 888 - 99 - 78</p>
+        <p class="phone2">7 8 9 4</p>
+      </div>
+    </div>
+  </header>
+  <div class="swiper mySwiper" id="main">
+    <button class="oforml">
+      Оформить заказ
+    </button>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/main1.png"></div>
+      <div class="swiper-slide"><img src="images/main2.png"></div>
+      <div class="swiper-slide"><img src="images/main3.png"></div>
+      <div class="swiper-slide"><img src="images/main4.png"></div>
+      <div class="swiper-slide"><img src="images/main5.png"></div>
+      <div class="swiper-slide"><img src="images/main6.png"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <section class="items1" id="pizza">
+    <h2>ПИЦЦЫ</h2>
+    <div class="itemsBlocks">
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza1.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza2.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Грибная</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza3.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Италиано</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza4.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza5.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza6.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza7.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/pizza/pizza8.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="items2" id="burger">
+    <h2>БУРГЕРЫ</h2>
+    <div class="itemsBlocks">
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger1.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger2.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Грибная</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger3.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Италиано</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger4.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger5.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger6.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger7.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+      <div class="item">
+        <img class="itemPic" src="images/burgers/burger8.png">
+        <img class="star gray" src="./images/star.png">
+        <img class="info" src="./images/info.svg">
+        <h3>Бачата</h3>
+        <div class="radio">
+          <label class="active">
+            <input type="radio" name="happy" value="yes">32 см
+          </label>
+          <label>
+            <input type="radio" name="happy" value="no">42 см
+          </label>
+        </div>
+        <p class="price">13,90 р</p>
+
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
