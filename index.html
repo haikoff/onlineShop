@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <title>Вкусняшка</title>
+  <link type="favicon" sizes="32x32" rel="icon" href=".../icons8-еда-32.png">
   <link rel="stylesheet" href="style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,12 +94,12 @@
       Оформить заказ
     </button>
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/main1.png"></div>
-      <div class="swiper-slide"><img src="images/main2.png"></div>
-      <div class="swiper-slide"><img src="images/main3.png"></div>
-      <div class="swiper-slide"><img src="images/main4.png"></div>
-      <div class="swiper-slide"><img src="images/main5.png"></div>
-      <div class="swiper-slide"><img src="images/main6.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main1.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main2.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main3.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main4.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main5.png"></div>
+      <div class="swiper-slide" data-swiper-autoplay="6000"><img src="images/main6.png"></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -378,6 +380,10 @@
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
